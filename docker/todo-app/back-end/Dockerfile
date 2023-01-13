@@ -1,6 +1,6 @@
 FROM node:14
-WORKDIR /back-end
+WORKDIR /app
 EXPOSE 3001
 ADD ./node_modules.tar.gz .
-ADD . /back-end
+ADD . .
 CMD [ "npm", "start" ]
